@@ -21,11 +21,12 @@ public class NComplexity {
 		int n = 19;
 		System.out.println(orderN(n));
 	}
-	public static int orderN(int n){
+
+	public static int orderN(int n) {
 		int count = 0;
-		for (int i = 1; i<n;){
-			count ++;
-			i = i+1;
+		for (int i = 1; i < n;) {
+			count++;
+			i = i + 1;
 		}
 		return count;
 	}

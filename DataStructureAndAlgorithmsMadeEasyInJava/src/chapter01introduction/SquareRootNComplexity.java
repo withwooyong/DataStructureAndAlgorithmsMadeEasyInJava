@@ -20,13 +20,14 @@ public class SquareRootNComplexity {
 		int n = 6;
 		System.out.println(squareRootN(n));
 	}
-	public static int squareRootN(int n){
-		int i=1;
+
+	public static int squareRootN(int n) {
+		int i = 1;
 		int sum = 0;
-		while(sum<n){
+		while (sum < n) {
 			sum = sum + i;
 			i++;
 		}
-		return i-1;
+		return i - 1;
 	}
 }

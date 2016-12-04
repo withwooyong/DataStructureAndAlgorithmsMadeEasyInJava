@@ -12,14 +12,20 @@
 
 package chapter02recursionandbacktracking;
 
-public class Factorial {	
-	public int factorial(int n) {	
+public class Factorial {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 4;
+		System.out.println(factorial(n));
+	}
+	
+	public static int factorial(int n) {
 		// base cases: fact of 0 is 1
-		if(n == 0) 
+		if (n == 0)
 			return 1;
 		// recursive case: multiply n by (n-1) factorial
-		else 
-			return n*factorial(n-1);
+		else
+			return n * factorial(n - 1);
 	}
 }
-

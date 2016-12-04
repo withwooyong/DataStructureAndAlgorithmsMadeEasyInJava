@@ -23,34 +23,37 @@ public class NSquareLogNComplexity {
 		System.out.println(nSquareLogN2(n));
 		System.out.println(nSquareLogN3(n));
 	}
-	public static int nSquareLogN(int n){
+
+	public static int nSquareLogN(int n) {
 		int count = 0;
-		for (int i = 1; i<n;i = i *2){
-			for (int j = 1; j<n;j++){
-				for (int k = 1; k<n;k++){
-					count ++;
+		for (int i = 1; i < n; i = i * 2) {
+			for (int j = 1; j < n; j++) {
+				for (int k = 1; k < n; k++) {
+					count++;
 				}
 			}
 		}
 		return count;
 	}
-	public static int nSquareLogN2(int n){
+
+	public static int nSquareLogN2(int n) {
 		int count = 0;
-		for (int i = 1; i<n;i = i+1 ){
-			for (int j = 1; j<n;j = j*2){
-				for (int k = 1; k<n;k = k + 1){
-					count ++;
+		for (int i = 1; i < n; i = i + 1) {
+			for (int j = 1; j < n; j = j * 2) {
+				for (int k = 1; k < n; k = k + 1) {
+					count++;
 				}
 			}
 		}
 		return count;
 	}
-	public static int nSquareLogN3(int n){
+
+	public static int nSquareLogN3(int n) {
 		int count = 0;
-		for (int i = 1; i<n;i++){
-			for (int j = 1; j<n;j++){
-				for (int k = 1; k<n;k =  k *2){
-					count ++;
+		for (int i = 1; i < n; i++) {
+			for (int j = 1; j < n; j++) {
+				for (int k = 1; k < n; k = k * 2) {
+					count++;
 				}
 			}
 		}

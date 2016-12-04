@@ -13,12 +13,13 @@
 
 
 package chapter04stacks;
-public class FixedSizeArrayStack{
+
+public class FixedSizeArrayStack {
 	// Length of the array used to implement the stack.
 	protected int capacity;
 
 	// Default array capacity.
-	public static final int CAPACITY = 16;	// power of 2
+	public static final int CAPACITY = 16; // power of 2
 
 	// Array used to implement the stack.
 	protected int[] stackRep;
@@ -35,7 +36,7 @@ public class FixedSizeArrayStack{
 	public FixedSizeArrayStack(int cap) {
 		capacity = cap;
 		stackRep = new int[capacity]; // compiler may give warning, but this
-									  // is ok
+										// is ok
 	}
 
 	// Returns the number of elements in the stack. This method runs in O(1) time.
